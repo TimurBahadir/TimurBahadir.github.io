@@ -1,4 +1,5 @@
-$(document).ready(function() {
-  console.log("Hello World!")
-  $.material.init()
+$(document).ready(function(){
+    $(".dropdown-button").dropdown();
+    $(".button-collapse").sideNav();
+    $('ul.tabs').tabs();
 });
