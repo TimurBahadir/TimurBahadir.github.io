@@ -8,17 +8,12 @@
 
 	<title>Timur Bahadir - Webseite</title>
 
-
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Bootstrap Material Design -->
-	<link href="css/bootstrap-material-design.min.css" rel="stylesheet">
-	<link href="css/ripples.min.css" rel="stylesheet">
-
-	<link href="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,142 +26,299 @@
 </head>
 
 <body>
-	<div id="fl-container" class="container-fluid">
+	<div id="fl-container" class="container">
 
-		<div class="row">
-			<div class="col-md-2"></div>
-			<!-- Left Pad -->
-			<div class="col-md-8">
-				<!-- Main Content -->
-				<nav class="navbar navbar-default navbar-fixed-top">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-								aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-                        	</button>
-							<a class="navbar-brand" href="#">Timur Bahadir</a>
-						</div>
+		<!-- Navbar dropdown content -->
+		<ul id="nav-projekte-dropdown" class="dropdown-content">
+			<li><a href="#studium">Studium</a></li>
+			<li><a href="#fcc">Free Code Camp</a></li>
+			<li><a href="#private">Privat</a></li>
+		</ul>
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#">Über Mich <span class="sr-only">(current)</span></a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekte <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="#studium-projekte">Studium</a></li>
-										<li><a href="#fcc-projekte">Free Code Camp</a></li>
-										<li><a href="#private-projekte">Privat</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Kontakt <span class="sr-only">(current)</span></a></li>
-							</ul>
-						</div>
-						<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container-fluid -->
-				</nav>
-
-				<!-- AboutMe Heading -->
-				<div class="row" style="margin-top: 10%;">
-					<div class="col-md-12">
-						<h2 href="about-me">Über Mich</h2>
-					</div>
-				</div>
-
-				<!-- AboutMe Section-->
-				<div id="about-me-page" class="jumbotron">
-					<div class="row">
-						<div class="col-md-2">
-							<img id="about-me-image" class="img-responsive" src="images/Profil.png" alt="TODO">
-						</div>
-						<div class="col-md-10">
-							<p id="about-me-text">
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-								aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-								no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-								accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-								sit amet.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Projekts Heading -->
-				<div class="row">
-					<div class="col-md-12">
-						<h2 href="projekts">Projekte</h2>
-					</div>
-				</div>
-
-				<!-- Projekts Section -->
-				<div id="projekt-page" class="jumbotron">
-
-					<!-- Projekts Tabs-->
-					<ul class="nav nav-pills">
-						<li><a href="#studium-projekte" data-toggle="tab">Studium</a></li>
-						<li><a href="#fcc-projekte" data-toggle="tab">Free Code Camp</a></li>
-						<li><a href="#private-projekte" data-toggle="tab">Privat</a></li>
-					</ul>
-
-					<!-- Tab Content-->
-					<div id="myTabContent" class="tab-content">
-						<div class="tab-pane fade active in" id="studium-projekte">
-							<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master
-								cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher
-								synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan
-								aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-						</div>
-						<div class="tab-pane fade" id="fcc-projekte">
-							<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
-								blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth
-								letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic,
-								assumenda labore aesthetic magna delectus mollit.</p>
-						</div>
-						<div class="tab-pane fade" id="private-projekte">
-							<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi
-								farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles
-								etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Contact Heading -->
-				<div class="row">
-					<div class="col-md-12">
-						<h2 href="contact">Kontakt</h2>
-					</div>
-				</div>
-
-				<!-- Contact Page -->
-				<div id="contact-page" class="jumbotron">
-					<div class="row">
-						<div class="col-md-12">
-							<ul>
-								<li>Email: Timur.Bahadir@gmail.com</li>
-								<li>LinkedIn</li>
-								<li>Xing</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+		<nav>
+			<div class="nav-wrapper">
+				<!-- Navbar logo -->
+				<a href="#" class="brand-logo">Timur Bahadir</a>
+				<!-- SideBar mobile toggle button -->
+				<a href="#" data-activates="qwe" class="button-collapse"><i class="material-icons">menu</i></a>
+				<!-- Mavbar buttons, hide when resolution is too low -->
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#about-me">Über Mich</a></li>
+					<li><a class="dropdown-button" href="#projects" data-activates="nav-projekte-dropdown">Projekte<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+				<!-- SideBar content when navbar buttons hide and SideBar toggle is active -->
+				<ul class="side-nav" id="qwe">
+					<li><a href="#about-me">Über Mich</a></li>
+					<li>
+						<a href="#projects">Projekte</a>
+						<ul>
+							<li><a href="#studium">>> Studium</a></li>
+							<li><a href="#fcc">>> Free Code Camp</a></li>
+							<li><a href="#private">>> Privat</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
 			</div>
-			<div class="col-md-2"></div>
+		</nav>
+
+		<!-- AboutMe Heading -->
+		<h4 href="about-me">Über Mich</h4>
+
+		<!-- AboutMe Section -->
+		<div id="about-me-page">
+			<p>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+				aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+				no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+				diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+				et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>
+		</div>
+
+		<!-- Projects Heading -->
+		<h4 href="projects">Projekte</h4>
+
+		<!-- Projects Section -->
+		<div id="projects-page" style="background-color: white">
+			<div class="row">
+				<div class="col s12">
+					<ul class="tabs">
+						<li class="tab col s4"><a href="#studium">Studium</a></li>
+						<li class="tab col s4"><a href="#fcc">Free Code Camp</a></li>
+						<li class="tab col s4"><a href="#privat">Privat</a></li>
+					</ul>
+				</div>
+				<div id="studium" class="col s12">
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Vier Gewinnt</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Für das Fach "Programmierprojekt" haben wir in einer zweier Gruppe das Spiel "Vier Gewinnt" programmiert. Das Spiel ist in
+											mit Java gemacht und hat folgende Features:
+
+											<ul>
+												<li>Grafische Oberfläche (Java/Swing)</li>
+												<li>Lokaler und Online Mehrspieler Modus (Java-Sockets)</li>
+												<li>KI in verschiedenen Schwierigkeiten (Min-Max Algorithmus mit Alpha Beta Schnitt)</li>
+												<li>Speicher von Spielen</li>
+											</ul>
+
+											Für dieses Projekt erhielten wir die Note: 1.0
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Passwortmauer</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Für das Fach "Sichere Hardware" habe ich eine 12 Seiten Ausarbeitung über Passwort Sicherheit geschrieben. Für diese Ausarbeitung
+											erhielt ich die Note 1.7
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Familien Finanzverwaltungs Software</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Für das Fach "Software Engineering" haben wir ein Programm entwickelt welches die Finanzverwaltung in einem Haushalt handhaben
+											sollte. Dieses Projekt war aufgeteilt in 3 Aufgaben, die ersten beiden ging es um die Planung nach IEEE Standart
+											inklusive UML Diagrammen und Anwendungsfall beschreibungen. In der letzen Übung ging es die eigentliche implementation
+											des Programms in C++. Das Programm hatte folgende Features:
+											<ul>
+												<li>Grafische Oberfläche (Qt5)</li>
+												<li>SQLite Datenbank</li>
+												<li>Support für mehrere Benutzer</li>
+											</ul>
+
+											Für jede Übung gab es 5 Punkte. Insgesammt haben wir 12 erreicht davon 5 für die dritte Übung.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Verbesserung der Hochschulwebseite</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Für das Fach "Mensch-Computer-Interaktion" haben wir in einer vier Personen Gruppe die Hochschulwebseite überarbeitet um
+											die Interaktion zu verbessern. In dieser Aufgabe habe ich das Programmieren in HTML/CSS übernommen. FÜr diese
+											Aufgabe haben wir 15 von 15 Punkte erhalten.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div id="fcc" class="col s12">
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Tribute Page</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Das erste Projekt für "Free Code Camp" sollte man eine Tribute Page entwickeln. Dies ist meine für Dan Harmon und Justin
+											Roiland. Die Webseite verwendet "Bootstrap" für Responsive Design.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Protfolio</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Das zweite Projekt für "Free Code Camp" sollte man eine Portfolio Webseite entwickeln, welche sie momentan lesen :). Die
+											Webseite verwendet "Materialize" für Responsive Material Design.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Quote Generator</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Das erste Projekt für "Free Code Camp" sollte man einen "Quote Generator" entwickeln. Dies ist meine für Dan Harmon und Justin
+											Roiland
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="privat" class="col s12">
+          <div class="projekt-entry z-depth-1 hoverable">
+						<div class="row">
+							<div class="col s2">
+								<img class="responsive-img" src="images/Projekt.png">
+							</div>
+							<div class="col s10">
+								<div class="row">
+									<div class="col s12">
+										<h4>Quote Generator</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<p>
+											Das erste Projekt für "Free Code Camp" sollte man einen "Quote Generator" entwickeln. Dies ist meine für Dan Harmon und Justin
+											Roiland
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+			</div>
+		</div>
+
+		<!-- Contact Heading -->
+		<h4 href="contact">Kontakt</h4>
+
+		<!-- Contact Section -->
+		<div id="contact-page">
+			<ul>
+				<li>Email: Timur.Bahadir@gmail.com</li>
+				<li>LinkedIn</li>
+				<li>Xing</li>
+			</ul>
 		</div>
 	</div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script src="js/master.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/ripples.min.js"></script>
-	<script src="js/material.min.js"></script>
-	<script src="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
 </body>
 
 </html>
