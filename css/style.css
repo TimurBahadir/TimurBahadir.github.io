@@ -13,12 +13,16 @@ body{
     border-radius: 5px;
 }
 
-#about-me-page{
-    padding: 20px;
+#about-me-page{ 
+    padding: 10px 20px 0px 20px;
+}
+
+#about-me-page div div *{ 
+    margin-bottom: -5px;
 }
 
 #contact-page{
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .tabs .indicator {
