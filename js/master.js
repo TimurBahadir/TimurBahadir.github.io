@@ -62,9 +62,9 @@ $(document).ready(function(){
     };
 
     var seminar = {
-        title: "Neuronale Netze",
+        title: "Künstliche neuronale Netze",
         description: `Für das Fach "Seminar" haben wir in einer drei Personen Gruppe eine Ausarbeitung
-                        über das Thema "Neuronale Netze" geschrieben.
+                        über das Thema "Künstliche neuronale Netze" geschrieben.
                         
                         Mein Teil handelte über das "Perzeptron".
                         
