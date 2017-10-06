@@ -1,0 +1,31 @@
+* {
+	font-family: 'Source Code Pro', monospace;
+}
+
+body {
+	background-color: #002b36;
+}
+
+h1 {
+	color: #cb4b16;
+}
+
+h2 {
+	color: #709d06;
+}
+
+h3 {
+	color: #859900;
+}
+
+p, li {
+	color: #586e75;
+}
+
+.string {
+	color: #2aa198;
+}
+
+.variable {
+	color: #808000;
+}

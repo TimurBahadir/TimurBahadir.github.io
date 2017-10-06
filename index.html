@@ -2,37 +2,114 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
 	<title>Timur Bahadir</title>
 </head>
 
 <body>
 	<div>
-		<div>
-			<h1>Profile.txt</h1>
-		</div>
+		<h1>Profil</h1>
 
 		<div>
 			<h2>Status</h2>
-			<p>->Name: Timur Bahadir</p>
-			<p>->Date of Birth: 14.07.1995</p>
-			<p>->Nationality: german</p>
 
-			<h2>Life</h2>
-			<p>->Bachelor of Science; Software Engineering; Hochschule-Aalen</p>
-			<p>->Fachhochschulreife:</p>
-			<p>-->Technisches Berufskolleg 2; Technische Schule Heidenheim</p>
-			<p>-->Technisches Berufskolleg 1; Kreisberufschulzentrum Ellwangen</p>
-			<p>->Mittlere Reife; Realschule Bopfingen</p>
-			<p>->Hauptschule; Propsteischule Westhausen</p>
+			<ul>
+				<li><span class="variable">Name:</span> Timur Bahadir</li>
+				<li><span class="variable">Date of Birth:</span> 14.07.1995</li>
+				<li><span class="variable">Nationality:</span> deutsch</li>
+			</ul>
+
+			<h2>Bildung</h2>
+
+			<ul>
+				<li>Bachelor of Science; Software Engineering; Hochschule-Aalen</li>
+				<li>Fachhochschulreife:
+					<ul>
+						<li>Technisches Berufskolleg 2; Technische Schule Heidenheim</li>
+						<li>Technisches Berufskolleg 1; Kreisberufschulzentrum Ellwangen</li>
+					</ul>
+				</li>
+				<li>Mittlere Reife; Realschule Bopfingen</li>
+				<li>Hauptschule; Propsteischule Westhausen</li>
+			</ul>
+
 
 			<h2>Praxiserfahrung</h2>
-			<p><b>01.03.2017 - 31.08.2017; Praktikum bei TeamViewer GmbH im Linux Team</b></p>
-			<p>13.02.2012 - 24.02.2012; Praktikum bei den Stadtwerken Aalen</p>
-			<p>15.02.2010 - 19.02.2010; Praktikum bei cellent AG</p>
-			<p>26.10.2009 - 30.10.2009; Praktikum bei arcos informationssysteme gmbh</p>
+			<ul>
+				<li><b>01.03.2017 - 31.08.2017; Praktikum bei TeamViewer GmbH im Linux Team</b></li>
+				<li>13.02.2012 - 24.02.2012; Praktikum bei den Stadtwerken Aalen</li>
+				<li>15.02.2010 - 19.02.2010; Praktikum bei cellent AG</li>
+				<li>26.10.2009 - 30.10.2009; Praktikum bei arcos informationssysteme gmbh</li>
+			</ul>
 		</div>
-
 	</div>
+	<!-- profile div / -->
+
+	<div>
+		<h1>Projekte</h1>
+
+		<h2>Studium</h2>
+
+		<h3>Vier Gewinnt</h3>
+		<p>
+			Für das Fach Programmierprojekt haben wir in einer zwei Personen Gruppe das Spiel Vier Gewinnt programmiert.
+		</p>
+		<ul>
+			<li>Grafische Oberfläche (Java/Swing)</li>
+			<li>Lokaler und Online Mehrspieler Modus (Java-Sockets)</li>
+			<li>KI in verschiedenen Schwierigkeiten (Alpha-Beta-Suche)</li>
+			<li>Speichern von Spielständen</li>
+		</ul>
+		<p>
+			Für dieses Projekt erhielten wir die <strong>Note: 1.0</strong>.</p>
+		</p>
+
+		<h3>Passwort-Sicherheit</h3>
+		<p>
+			Für das Fach Sichere Hardware habe ich eine Ausarbeitung über das Thema Passwort-Sicherheit verfasst. <br> Für dieses
+			Projekt erhielt ich die <strong>Note: 1.7</strong>.
+		</p>
+
+		<h3>Finanzverwaltungs-Software</h3>
+		<p>
+			Für das Fach Software Engineering hatten wir die Aufgabe eine Finanzverwaltungs-Software zuerst nach IEEE-SRS-Standart <br>
+			zu spezifizieren und dann in C++ unter verwendung von dem Qt-Framework zu implementieren. Die Software verfügt über folgende Features:
+		</p>
+
+		<ul>
+			<li>Grafische Oberfläche (Qt)</li>
+			<li>Anlegen, bearbeiten und löschen von Profilen, Kategorien, Zahlungsarten und Transaktionen</li>
+			<li>Sonderrechte für Admin-Profile</li>
+			<li>Persistente Speicherung in einer SQLite Datenbank</li>
+		</ul>
+
+		<p>
+			Dieses Projekt war in drei Teile aufgeteilt, wovon jeder Teil 0 bis 5 Punkte gab. Wir erreichten <strong>12 von 15 Punkten</strong>, davon
+			<strong>5/5</strong> in der Implementierung.
+		</p>
+
+		<h3>Künstliche neuronale Netze</h3>
+		<p>
+			Für das Fach Seminar haben wir in einer Drei-Personengruppe eine Ausarbeitung über das Thema Künstliche neuronale Netze geschrieben.<br>
+			Mein Teil in dieser Ausarbeitung handelte über das Perzeptron. Zu diesem Projekt gehörte ein ~25 minütiger Vortrag.<br>
+			Für diese Ausarbeitung erhielt ich die <strong>Note: 1.0</strong>.
+		</p>
+
+		<h2>Privat</h2>
+	</div>
+	<!-- projects div -->
+
+	<div>
+		<h1>Kontakt</h1>
+		<ul>
+			<li>E-Mail: Timur.Bahadir@gmail.com</li>
+		</ul>
+	</div>
+	<!-- contact div -->
 </body>
 
 </html>
