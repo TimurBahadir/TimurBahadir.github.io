@@ -3,23 +3,24 @@
 }
 
 body {
-	background-color: #002b36;
+	background-color: #93a1a1;
 }
 
-h1 {
+ul {
+	list-style-type: none;
+}
+
+.preprocess {
 	color: #cb4b16;
 }
 
-h2 {
+.class {
 	color: #709d06;
+	margin-bottom: -10px;
 }
 
-h3 {
-	color: #859900;
-}
-
-p, li {
-	color: #586e75;
+.function {
+	color: #b58900;
 }
 
 .string {
@@ -28,4 +29,26 @@ p, li {
 
 .variable {
 	color: #808000;
+}
+
+.symbol {
+	color: #93a1a1;
+}
+
+.closing_brace {
+	margin-top: -10px;
+}
+
+#main-content {
+	width: 900px;
+
+	background-color: #002b36;
+
+	display: block;
+	margin: -25px auto -25px auto;
+	padding: 20px 20px 20px 40px;
+
+	border-style: solid;
+	border-color: #2aa198;
+	border-width: 1px;
 }

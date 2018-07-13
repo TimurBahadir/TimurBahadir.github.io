@@ -11,105 +11,170 @@
 </head>
 
 <body>
-	<div>
-		<h1>Profil</h1>
+	<div id="main-content">
+		<div id="profile">
+			<h1 class="preprocess">#include &#8826Profil&#8827</h1>
+
+			<div>
+				<h2 class="class">Status
+					<span class="symbol">{</span>
+				</h2>
+
+				<ul>
+					<li>
+						<span class="variable">Name</span>
+						<span class="symbol"> = </span>
+						<span class="string">"Timur Bahadir"</span>
+					</li>
+
+					<li>
+						<span class="variable">Ge­burts­da­tum</span>
+						<span class="symbol"> = </span>
+						<span class="string">"14.07.1995"</span>
+					</li>
+
+					<li>
+						<span class="variable">Nationalität</span>
+						<span class="symbol"> = </span>
+						<span class="string">"deutsch"</span>
+					</li>
+
+					<li>
+						<span class="variable">Familienstand</span>
+						<span class="symbol"> = </span>
+						<span class="string">"ledig"</span>
+					</li>
+				</ul>
+
+				<h2 class="symbol closing_brace">};</h2>
+
+				<h2 class="class">Bildung
+					<span class="symbol">{</span>
+				</h2>
+
+				<ul>
+					<li>
+						<span class="variable">Bachelor of Science</span>
+						<span class="symbol">: </span>
+						<span class="string">"Software Engineering: Hochschule-Aalen"</span>
+					</li>
+					<li>
+						<span class="variable">Fachhochschulreife</span>
+						<span class="symbol">:</span>
+						<ul>
+							<li>
+								<span class="variable">Technisches Berufskolleg 2</span>
+								<span class="symbol">:</span>
+								<span class="string">Technische Schule Heidenheim</span>
+							</li>
+							<li>
+								<span class="variable">Technisches Berufskolleg 1</span>
+								<span class="symbol">:</span>
+								<span class="string">Kreisberufschulzentrum Ellwangen</span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span class="variable">Mittlere Reife</span>
+						<span class="symbol">:</span>
+						<span class="string">Realschule Bopfingen</span>
+					</li>
+					<li>
+						<span class="variable">Hauptschule</span>
+						<span class="symbol">:</span>
+						<span class="string">Propsteischule Westhausen</span>
+					</li>
+				</ul>
+				<h2 class="symbol closing_brace">};</h2>
+
+
+				<h2 class="class">Praxiserfahrung
+					<span class="symbol">{</span>
+				</h2>
+				<ul>
+					<li>
+						<b>01.03.2017 - 31.08.2017; Praktikum bei TeamViewer GmbH im Linux Team</b>
+					</li>
+					<li>13.02.2012 - 24.02.2012; Praktikum bei den Stadtwerken Aalen</li>
+					<li>15.02.2010 - 19.02.2010; Praktikum bei cellent AG</li>
+					<li>26.10.2009 - 30.10.2009; Praktikum bei arcos informationssysteme gmbh</li>
+				</ul>
+				<h2 class="symbol closing_brace">};</h2>
+
+			</div>
+		</div>
+		<!-- profile div / -->
 
 		<div>
-			<h2>Status</h2>
+			<h1>Projekte</h1>
+
+			<h2>Studium</h2>
+
+			<h3>Vier Gewinnt</h3>
+			<p>
+				Für das Fach Programmierprojekt haben wir in einer zwei Personen Gruppe das Spiel Vier Gewinnt programmiert.
+			</p>
+			<ul>
+				<li>Grafische Oberfläche (Java/Swing)</li>
+				<li>Lokaler und Online Mehrspieler Modus (Java-Sockets)</li>
+				<li>KI in verschiedenen Schwierigkeiten (Alpha-Beta-Suche)</li>
+				<li>Speichern von Spielständen</li>
+			</ul>
+			<p>
+				Für dieses Projekt erhielten wir die
+				<strong>Note: 1.0</strong>.</p>
+			</p>
+
+			<h3>Passwort-Sicherheit</h3>
+			<p>
+				Für das Fach Sichere Hardware habe ich eine Ausarbeitung über das Thema Passwort-Sicherheit verfasst.
+				<br> Für dieses Projekt erhielt ich die
+				<strong>Note: 1.7</strong>.
+			</p>
+
+			<h3>Finanzverwaltungs-Software</h3>
+			<p>
+				Für das Fach Software Engineering hatten wir die Aufgabe eine Finanzverwaltungs-Software zuerst nach IEEE-SRS-Standart
+				<br> zu spezifizieren und dann in C++ unter verwendung von dem Qt-Framework zu implementieren. Die Software verfügt über
+				folgende Features:
+			</p>
 
 			<ul>
-				<li><span class="variable">Name:</span> Timur Bahadir</li>
-				<li><span class="variable">Date of Birth:</span> 14.07.1995</li>
-				<li><span class="variable">Nationality:</span> deutsch</li>
+				<li>Grafische Oberfläche (Qt)</li>
+				<li>Anlegen, bearbeiten und löschen von Profilen, Kategorien, Zahlungsarten und Transaktionen</li>
+				<li>Sonderrechte für Admin-Profile</li>
+				<li>Persistente Speicherung in einer SQLite Datenbank</li>
 			</ul>
 
-			<h2>Bildung</h2>
+			<p>
+				Dieses Projekt war in drei Teile aufgeteilt, wovon jeder Teil 0 bis 5 Punkte gab. Wir erreichten
+				<strong>12 von 15 Punkten</strong>, davon
+				<strong>5/5</strong> in der Implementierung.
+			</p>
 
+			<h3>Künstliche neuronale Netze</h3>
+			<p>
+				Für das Fach Seminar haben wir in einer Drei-Personengruppe eine Ausarbeitung über das Thema Künstliche neuronale Netze geschrieben.
+				<br> Mein Teil in dieser Ausarbeitung handelte über das Perzeptron. Zu diesem Projekt gehörte ein ~25 minütiger Vortrag.
+				<br> Für diese Ausarbeitung erhielt ich die
+				<strong>Note: 1.0</strong>.
+			</p>
+
+			<h2>Privat</h2>
+		</div>
+		<!-- projects div -->
+
+		<div>
+			<h1>Kontakt</h1>
 			<ul>
-				<li>Bachelor of Science; Software Engineering; Hochschule-Aalen</li>
-				<li>Fachhochschulreife:
-					<ul>
-						<li>Technisches Berufskolleg 2; Technische Schule Heidenheim</li>
-						<li>Technisches Berufskolleg 1; Kreisberufschulzentrum Ellwangen</li>
-					</ul>
+				<li>
+					<span class="variable">E-Mail</span> =
+					<span class="string">Timur.Bahadir@gmail.com</span class="string">
 				</li>
-				<li>Mittlere Reife; Realschule Bopfingen</li>
-				<li>Hauptschule; Propsteischule Westhausen</li>
-			</ul>
-
-
-			<h2>Praxiserfahrung</h2>
-			<ul>
-				<li><b>01.03.2017 - 31.08.2017; Praktikum bei TeamViewer GmbH im Linux Team</b></li>
-				<li>13.02.2012 - 24.02.2012; Praktikum bei den Stadtwerken Aalen</li>
-				<li>15.02.2010 - 19.02.2010; Praktikum bei cellent AG</li>
-				<li>26.10.2009 - 30.10.2009; Praktikum bei arcos informationssysteme gmbh</li>
 			</ul>
 		</div>
+		<!-- contact div -->
 	</div>
-	<!-- profile div / -->
-
-	<div>
-		<h1>Projekte</h1>
-
-		<h2>Studium</h2>
-
-		<h3>Vier Gewinnt</h3>
-		<p>
-			Für das Fach Programmierprojekt haben wir in einer zwei Personen Gruppe das Spiel Vier Gewinnt programmiert.
-		</p>
-		<ul>
-			<li>Grafische Oberfläche (Java/Swing)</li>
-			<li>Lokaler und Online Mehrspieler Modus (Java-Sockets)</li>
-			<li>KI in verschiedenen Schwierigkeiten (Alpha-Beta-Suche)</li>
-			<li>Speichern von Spielständen</li>
-		</ul>
-		<p>
-			Für dieses Projekt erhielten wir die <strong>Note: 1.0</strong>.</p>
-		</p>
-
-		<h3>Passwort-Sicherheit</h3>
-		<p>
-			Für das Fach Sichere Hardware habe ich eine Ausarbeitung über das Thema Passwort-Sicherheit verfasst. <br> Für dieses
-			Projekt erhielt ich die <strong>Note: 1.7</strong>.
-		</p>
-
-		<h3>Finanzverwaltungs-Software</h3>
-		<p>
-			Für das Fach Software Engineering hatten wir die Aufgabe eine Finanzverwaltungs-Software zuerst nach IEEE-SRS-Standart <br>
-			zu spezifizieren und dann in C++ unter verwendung von dem Qt-Framework zu implementieren. Die Software verfügt über folgende Features:
-		</p>
-
-		<ul>
-			<li>Grafische Oberfläche (Qt)</li>
-			<li>Anlegen, bearbeiten und löschen von Profilen, Kategorien, Zahlungsarten und Transaktionen</li>
-			<li>Sonderrechte für Admin-Profile</li>
-			<li>Persistente Speicherung in einer SQLite Datenbank</li>
-		</ul>
-
-		<p>
-			Dieses Projekt war in drei Teile aufgeteilt, wovon jeder Teil 0 bis 5 Punkte gab. Wir erreichten <strong>12 von 15 Punkten</strong>, davon
-			<strong>5/5</strong> in der Implementierung.
-		</p>
-
-		<h3>Künstliche neuronale Netze</h3>
-		<p>
-			Für das Fach Seminar haben wir in einer Drei-Personengruppe eine Ausarbeitung über das Thema Künstliche neuronale Netze geschrieben.<br>
-			Mein Teil in dieser Ausarbeitung handelte über das Perzeptron. Zu diesem Projekt gehörte ein ~25 minütiger Vortrag.<br>
-			Für diese Ausarbeitung erhielt ich die <strong>Note: 1.0</strong>.
-		</p>
-
-		<h2>Privat</h2>
-	</div>
-	<!-- projects div -->
-
-	<div>
-		<h1>Kontakt</h1>
-		<ul>
-			<li>E-Mail: Timur.Bahadir@gmail.com</li>
-		</ul>
-	</div>
-	<!-- contact div -->
 </body>
 
 </html>
