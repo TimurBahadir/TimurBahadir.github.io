@@ -40,8 +40,11 @@ ul {
 }
 
 #main-content {
-	width: 60vw;
-	height: 100vh;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: auto;
+	height: auto;
 
 	background-color: #002b36;
 
