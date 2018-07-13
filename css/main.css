@@ -40,7 +40,8 @@ ul {
 }
 
 #main-content {
-	width: 900px;
+	width: 60vw;
+	height: 100vh;
 
 	background-color: #002b36;
 
