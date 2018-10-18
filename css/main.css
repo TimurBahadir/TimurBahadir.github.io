@@ -3,10 +3,89 @@
 }
 
 body {
-	background-color: #93a1a1;
+	background-color: #002b36;
+
+	margin: 0;
+	padding: 0;
 }
 
-ul {
+#explorer {
+	position: fixed;
+	height: 100%;
+	width: 250px;
+	top: 0;
+	left: 0;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: #001a20;
+}
+
+#main-content {
+	position: absolute;
+	top: 0;
+	left: 250px;
+
+	width: auto;
+	height: 100%;
+
+	background-color: #002b36;
+
+	margin: 0;
+	padding: 0;
+}
+
+.editor-project {
+	color: white;
+	width: auto;
+	margin: 0;
+	padding: 5px;
+	align-content: center;
+	background-color: #002833;
+	font-family: 'Roboto', sans-serif;
+}
+
+.editor-files {
+	list-style: none inside;
+
+	margin: 10px 0px 0px 5px;
+	padding: 0;
+}
+
+.editor-files ul {
+	list-style: none inside;
+}
+
+.editor-files li {
+	padding: 5px 0px 5px 0px;
+}
+
+.editor-files li a:link{
+	text-decoration: none;
+	color: #6788c0;
+}
+.editor-files li a:visited{
+	text-decoration: none;
+	color: #6788c0;
+}
+.editor-files li a:hover{
+	text-decoration: none;
+	color: white;
+}
+.editor-files li a:active{
+	text-decoration: none;
+}
+
+.current-project {
+	background-color: #000c0f;
+	margin-left: -5px;
+}
+.current-project a{
+	padding-left: 5px;
+}
+
+.profile-list {
 	list-style-type: none;
 }
 
@@ -37,22 +116,4 @@ ul {
 
 .closing_brace {
 	margin-top: -10px;
-}
-
-#main-content {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 0);
-	width: auto;
-	height: auto;
-
-	background-color: #002b36;
-
-	display: block;
-	margin: -25px auto -25px auto;
-	padding: 20px 20px 20px 40px;
-
-	border-style: solid;
-	border-color: #2aa198;
-	border-width: 1px;
 }
