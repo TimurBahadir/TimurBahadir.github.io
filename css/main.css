@@ -28,6 +28,7 @@ body {
 	left: 300px;
 
 	width: auto;
+	min-width: 780px;
 	height: 100%;
 
 	background-color: #002b36;
@@ -61,20 +62,18 @@ body {
 	padding: 5px 0px 5px 0px;
 }
 
-.editor-files li a:link{
+.editor-files li a{
 	text-decoration: none;
 	color: #6788c0;
+	font-family: 'Roboto', sans-serif;
 }
-.editor-files li a:visited{
+.editor-files li a:link, a:visited, a:active{
 	text-decoration: none;
 	color: #6788c0;
 }
 .editor-files li a:hover{
 	text-decoration: none;
 	color: white;
-}
-.editor-files li a:active{
-	text-decoration: none;
 }
 
 .current-project {
@@ -83,6 +82,10 @@ body {
 }
 .current-project a{
 	padding-left: 5px;
+}
+.current-project a span{
+	color: white;
+	font-family: 'Roboto', sans-serif;
 }
 
 .profile-list {
@@ -116,4 +119,41 @@ body {
 
 .closing_brace {
 	margin-top: -10px;
+}
+
+.file {
+	display: inline-flex;
+	background-color: #465c81;
+
+	width: 200px;
+	height: 350px;
+	padding: 5px;
+	margin: 15px;
+
+	border-radius: 5px;
+	border-color: #000c0f;
+	border-style: solid;
+	border-width: 1px;
+
+	box-shadow: 5px 5px 10px #000c0f;
+}
+
+.file a, a:hover, a:visited, a:active {
+	color: white;
+	text-decoration: none;
+}
+
+.file-thumb {
+	width: 100%;
+}
+
+.file-title {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 120%;
+	text-align: center;
+}
+
+.file-desc {
+
 }
