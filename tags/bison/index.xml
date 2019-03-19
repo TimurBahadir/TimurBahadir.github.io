@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bison on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/bison/</link>
+    <description>Recent content in bison on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/bison/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>pl0 Interpreter</title>
+      <link>https://timur-bahadir.de/project/pl0-interpreter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/pl0-interpreter/</guid>
+      <description>A interpreter for the programming language pl0. Created using flex, bison and modern C++. Made for my compiler class in university.</description>
+    </item>
+    
+  </channel>
+</rss>

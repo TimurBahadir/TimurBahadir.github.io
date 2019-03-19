@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timur Bahadir on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/</link>
+    <description>Recent content in Timur Bahadir on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bachelor Thesis: Person recognition system with OpenHAB integration</title>
+      <link>https://timur-bahadir.de/project/bachelor/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/bachelor/</guid>
+      <description>&lt;p&gt;For my bachelor thesis i wrote a person recognition system with OpenHAB integration.
+The system consists of a main application, written in python 3.6, called SmurvCamera
+(&lt;strong&gt;&lt;em&gt;Sm&lt;/em&gt;&lt;/strong&gt;art s&lt;strong&gt;&lt;em&gt;urv&lt;/em&gt;&lt;/strong&gt;eillance &lt;strong&gt;&lt;em&gt;camera&lt;/em&gt;&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;First the application learns the names and faces of a group of people, each with
+its own set of training data (images of their faces). Then it continuously scans a
+video stream, e.g.: a webcam or a RaspberryPi camera, and analyses each frame.&lt;/p&gt;
+
+&lt;p&gt;The frames go through a pipeline of operations. Since face detection and recognition
+are complicated tasks not every frame can should be scanned. The first test if a frame
+is relevant is a motion detection. Only if motion is detected a face detection is
+attempted. If a face is found, the application then tries to recognize the face, by
+comparing it to the set of trained faces.&lt;/p&gt;
+
+&lt;p&gt;This process creates a bunch of data that is then shared if desired. E-Mail Notifications
+can be send containing relevant information. Most importantly the data is transmitted
+to a OpenHAB server via MQTT and can then be used to automate home automation tasks.&lt;/p&gt;
+
+&lt;p&gt;The entirety of the SmurvApplication is very configurable. There are in total 63
+settings to control the application. Explaining each one would take to much space,
+although some notable ones are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Face detection method
+
+&lt;ul&gt;
+&lt;li&gt;Local binary pattern&lt;/li&gt;
+&lt;li&gt;HAAR cascades&lt;/li&gt;
+&lt;li&gt;Histogram of Oriented Gradients&lt;/li&gt;
+&lt;li&gt;Convolutional neural network&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/bachelor/gallery/frame_pipeline.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/bachelor/gallery/frame_pipeline_huaca8b6a26e7284b0cbb85ebc785494a4_720859_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/bachelor/gallery/rough_uml.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/bachelor/gallery/rough_uml_huc0b045645c770fb97fccf81cafe31a92_17105_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/bachelor/gallery/systementwurf.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/bachelor/gallery/systementwurf_hu4426c20207a3661631c37509043c40e2_39258_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cellular Automaton - Framework | Sandbox</title>
+      <link>https://timur-bahadir.de/project/cellular-automaton/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/cellular-automaton/</guid>
+      <description>&lt;p&gt;To make the development of cellular automatons easier i developed a framework/sandbox application.
+With it, only the rules for a cellular automaton need to be specified in a simple manner.
+Creation, interaction, updating and drawing are handled by the application.&lt;/p&gt;
+
+&lt;p&gt;I also recorded the development and combined it with a explanatory voice over into a ~14 minute timelapse
+which you can watch here.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/YzT-nDhnyLs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;If you want to download pre-built binaries, you can check out the itch.io &lt;a href=&#34;https://timurbahadir.itch.io/cellular-automaton&#34; target=&#34;_blank&#34;&gt;page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Created using
+
+&lt;ul&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;li&gt;SFML&lt;/li&gt;
+&lt;li&gt;TGUI&lt;/li&gt;
+&lt;li&gt;CMake&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Supports the following cellular automaton
+
+&lt;ul&gt;
+&lt;li&gt;Conways game of life&lt;/li&gt;
+&lt;li&gt;Generation of cave like structures&lt;/li&gt;
+&lt;li&gt;Brians Brain&lt;/li&gt;
+&lt;li&gt;Wire World&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CppColors</title>
+      <link>https://timur-bahadir.de/project/cpp-colors/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/cpp-colors/</guid>
+      <description>&lt;p&gt;CppColors is a library to create, handle and convert colors in C++.
+It started as a experiment with unit testing but actually developed into a
+useful library.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Micro-Service based music finder</title>
+      <link>https://timur-bahadir.de/project/music-app/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/music-app/</guid>
+      <description>&lt;p&gt;For university we had to create a music finder application. The application was distributed into
+multiple containers. A mongoDB-Database, a java Spring Boot business logic layer, a Angular.js
+web app and a Flutter based Android app.
+The database, business logic and web app, were each separated into their own Docker container.&lt;/p&gt;
+
+&lt;p&gt;My contribution to the project consisted of the Android app, the definition and composition of
+the Docker images and containers and parts of the business logic implementation.&lt;/p&gt;
+
+&lt;p&gt;Songs, albums and artists were collected from other services like Spotify and Youtube. Users could create accounts
+and tag songs, albums and artists. For each song an attempt to find it&amp;rsquo;s lyrics was made. If found
+they could be read inside of the app. Users could then search for songs, albums and artists by name or
+user given tags.&lt;/p&gt;
+
+
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_add_tag.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_add_tag_hu44f373b46e261ad60b81f23fe930e369_179793_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_album_info.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_album_info_hu5fe2ee6568218f586ad50595cd49c0b9_411453_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_album_info_li.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_album_info_li_hud5c36b6c3039044679f58cbe3a1af5c4_48428_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_album_songs.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_album_songs_hu4b12166d532cf02d313ebe7f5bfec1ce_35666_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_artist_info.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_artist_info_hu3776c11ddcfe2d8579470b1fd3834dd1_251096_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_artist_info_li.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_artist_info_li_hub430e3a240f775afaec0ba14782b516a_252149_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_home_view.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_home_view_hu7d6db6ab5de546d700b09bda55a605cf_324799_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_login.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_login_huad7c99ea1ab3658bfddf5c326292f788_15647_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_menu_li.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_menu_li_hu9ece163ce32c26ff135419a6838a92a6_96350_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_other_profile.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_other_profile_hu87c0745d3cc2ab883ec9b23643bd6a98_22366_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_other_profile_fab.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_other_profile_fab_hu7a789f8ad32f376323a608b5c685e626_38278_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_profile_fav.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_profile_fav_hu4282c34eea791a1b296f372c97d4fbfa_26298_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_profile_friends.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_profile_friends_hu617e6b01dde22487104641a43d2aa2fa_23055_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_profile_info.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_profile_info_hu9f8994dee10d47299b2b8556dc7677d9_24183_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_register.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_register_hu9930113562e66a9eed52563c60a85629_21674_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_search_none.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_search_none_hue81d2f1958054ff8846cda7fcb06c9b9_38989_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_search_result.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_search_result_hu2bc5e358ef01f58ace2d761b964d7d94_37642_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_fab.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_fab_hu7779a27957fcf80bd04b594b147a1d18_57442_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_info.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_info_hu9f2dfff8bc2b60ba0e75c79aef46c91f_36521_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_info_li.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_info_li_hu1ce82cb95ecf0e2ef1277d8739a595e9_51060_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_links.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_links_hufd8fa1cedf1b564f5bd3cdd2ac94ad3c_28498_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_lyrics.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/music-app/gallery/app_song_lyrics_hu129f673d2be7722c13c0830dfc07cfb2_97231_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenGL - Tutorial and Examples</title>
+      <link>https://timur-bahadir.de/project/opengl-tutorial/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/opengl-tutorial/</guid>
+      <description>&lt;p&gt;For university i went trough the process of learning OpenGL. I then compiled all the lessons
+i learned into a ~80 page long tutorial for other to read when they want to learn OpenGL.
+To improve upon the sources i used, i added multiple examples and many lines of code.&lt;/p&gt;
+
+&lt;p&gt;While reading and following the tutorial and examples a small but reuseable helper library is
+created, around the OpenGL-C-API, using modern C++.&lt;/p&gt;
+
+&lt;p&gt;Topics covered include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Creation of context&lt;/li&gt;
+&lt;li&gt;Creation and use of VBOs, VAOs, EBOs&lt;/li&gt;
+&lt;li&gt;Creation and use of Vertex- and Fragment Shaders&lt;/li&gt;
+&lt;li&gt;Uniforms&lt;/li&gt;
+&lt;li&gt;Rendering of 2D and 3D objects&lt;/li&gt;
+&lt;li&gt;Texture loading&lt;/li&gt;
+&lt;li&gt;Transformations&lt;/li&gt;
+&lt;li&gt;Making use of Framebuffers&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/opengl-tutorial/gallery/Gauss.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/opengl-tutorial/gallery/Gauss_hu8784ee68ad46e158fcaa8cf9abd47a16_70963_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;https://timur-bahadir.de/project/opengl-tutorial/gallery/Laplace.png&#34; &gt;
+  &lt;img src=&#34;https://timur-bahadir.de/project/opengl-tutorial/gallery/Laplace_hua95a733c2e994a25a8e42dbc0c43d2ff_64606_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tiler</title>
+      <link>https://timur-bahadir.de/project/tiler/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/tiler/</guid>
+      <description>&lt;p&gt;A casual clicker game made with Godot 3.1 using C#.&lt;/p&gt;
+
+&lt;p&gt;Intended for mobile devices but delayed since mobile export with C# doesn&amp;rsquo;t work yet.
+A demo can be &lt;a href=&#34;https://timurbahadir.itch.io/tiler&#34; target=&#34;_blank&#34;&gt;downloaded&lt;/a&gt;, currently only for Windows.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/WYT3815k874&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>UniVRsity Nightmare - A VR-Shooter</title>
+      <link>https://timur-bahadir.de/project/vr-shooter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/vr-shooter/</guid>
+      <description>&lt;p&gt;For a game development class in university we had to create a game. In a team of three we decided
+to make use of the, at the time, new VR technology.
+In the game, the player is a student stuck inside a nightmare. He needs to defend himself from
+waves of university related utensils like books, paper airplanes and erasers.
+For each utensil that reaches the player he looses one life. If he runs out of lives, he loses.
+Utensils need to be shot using the finger guns, controlled by the HMD accompanying controllers.
+To win the game the player need to survive multiple waves of utensils and, as a boss fight,
+write his bachelor thesis (by repeatably shooting it), while also still defending himself
+against a endless wave of enemies.&lt;/p&gt;
+
+&lt;p&gt;The game was made using the Unity3D game engine and the SteamVR plugin. I developed most of
+the code and created all models and textures (except for the hand and the posters on the wall).
+The gameplay mechanics were programmed using C#.&lt;/p&gt;
+
+&lt;p&gt;The video below shows the game in action.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/ts8R7QZhQzI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>pl0 Interpreter</title>
+      <link>https://timur-bahadir.de/project/pl0-interpreter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/pl0-interpreter/</guid>
+      <description>&lt;p&gt;A interpreter for the programming language pl0. Created using flex, bison and modern C++.
+Made for my compiler class in university.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SDL</title>
+      <link>https://timur-bahadir.de/tutorial/using_sdl/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://timur-bahadir.de/tutorial/using_sdl/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share some information needed to use the
+SDL library with modern CMake. Most guides only use the now
+deprecated non &lt;strong&gt;target_&lt;/strong&gt; functions to define include directories.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-sdl&#34;&gt;Installing SDL&lt;/h2&gt;
+
+&lt;p&gt;To make use of SDL in your projects you first need to install it.
+For that i highly recommend compiling it yourself.&lt;/p&gt;
+
+&lt;h3 id=&#34;downloading-the-sdl-source-code&#34;&gt;Downloading the SDL source code&lt;/h3&gt;
+
+&lt;p&gt;To compile it yourself, the source code is required.
+You can either use mercurial like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hg clone https://hg.libsdl.org/SDL SDL
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or download an archive from &lt;a href=&#34;https://www.libsdl.org/download-2.0.php&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+and then extract it somewhere you like.&lt;/p&gt;
+
+&lt;h3 id=&#34;building-and-installing-sdl&#34;&gt;Building and installing SDL&lt;/h3&gt;
+
+&lt;p&gt;After downloading the source code and entering it&amp;rsquo;s directory,
+build it using CMake. I booth build and install debug and release
+binaries. Also i use the ninja generator, if you don&amp;rsquo;t just omit
+the &lt;strong&gt;-GNinja&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir build
+cd build
+cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
+cmake --build . --target install -- -j 4
+cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release
+cmake --build . --clean-first --target install -- -j 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;windows-install-errors&#34;&gt;Windows install Errors&lt;/h3&gt;
+
+&lt;p&gt;At this point if you are on windows you might run into errors.
+If the compilation succeeds but the installation fails, it is
+probably a permission problem.&lt;/p&gt;
+
+&lt;p&gt;To fix it, go to the directory CMake tried to install SDL into.
+In my case thats &amp;ldquo;C:\Program Files (x86)\SDL2&amp;rdquo;. If the directory
+doesn&amp;rsquo;t exist, create it. Right click on the directory and select
+&lt;strong&gt;Properties&lt;/strong&gt;, then click on the &lt;strong&gt;Security&lt;/strong&gt; tab and then
+click on &lt;strong&gt;Edit&lt;/strong&gt;. Select the user that wants to install SDL,
+probably your current user, and then tick the &lt;strong&gt;Full Control&lt;/strong&gt; box
+followed by &lt;strong&gt;Apply&lt;/strong&gt; and &lt;strong&gt;Ok&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Rerun the installation command. This time it should work.&lt;/p&gt;
+
+&lt;h2 id=&#34;consuming-sdl-in-your-projects&#34;&gt;Consuming SDL in your Projects&lt;/h2&gt;
+
+&lt;p&gt;SDL should now be installed on your system. Now it&amp;rsquo;s time to
+test if it works. For that create a simple CMake project.
+Inside the &lt;strong&gt;CMakeLists.txt&lt;/strong&gt; file add the following lines
+of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cmake&#34;&gt;find_project(SDL2 REQUIRED)
+
+target_link_libraries(cool_project
+                      PUBLIC SDL2::SDL2main
+                             SDL2::SDL2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously change &lt;strong&gt;cool_project&lt;/strong&gt; to the name of your
+executable.&lt;/p&gt;
+
+&lt;p&gt;Now inside files which are part of the &lt;strong&gt;cool_project&lt;/strong&gt; executable
+add the following lines of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;SDL2/SDL.h&amp;gt;
+
+int main(){
+  SDL_Init(SDL_INIT_EVERYTHING);
+
+  SDL_Quit();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;cool_project&lt;/strong&gt; should now compile.&lt;/p&gt;
+
+&lt;h2 id=&#34;more-windows-problems&#34;&gt;More Windows Problems&lt;/h2&gt;
+
+&lt;h3 id=&#34;don-t-forget-the-binaries&#34;&gt;Don&amp;rsquo;t forget the binaries&lt;/h3&gt;
+
+&lt;p&gt;On Windows your program should compile now but crash when started.
+Theres a high chance that that is because it can&amp;rsquo;t find the SDL runtime binaries.
+You&amp;rsquo;ll have to copy the SDL binaries to one of two spaces.
+Possibility One is next to your executable, possibility two is into your windows
+system32 directory.&lt;/p&gt;
+
+&lt;h3 id=&#34;undefined-reference-to-main&#34;&gt;Undefined reference to main&lt;/h3&gt;
+
+&lt;p&gt;On windows theres a chance that you will get a undefined reference to
+&lt;strong&gt;main&lt;/strong&gt;. There are multiple solutions posted online but none of them
+worked for me. I had to do the following.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;SDL2/SDL.h&amp;gt;
+
+#ifdef __WIN32
+#include &amp;quot;windows.h&amp;quot;
+#endif
+
+#ifdef __WIN32
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance, LPSTR lpCmdLine, int cmdShow)
+#else
+int main(int argc, char **argv)
+#endif // __WIN32
+{
+  SDL_Init(SDL_INIT_EVERYTHING);
+
+  SDL_Quit();
+
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;different-include-path&#34;&gt;Different include path&lt;/h3&gt;
+
+&lt;p&gt;For some reason on some of my machines the include path &lt;strong&gt;SDL2/SDL.h&lt;/strong&gt; doesn&amp;rsquo;t work.
+On others it does. If &lt;strong&gt;SDL2/SDL.h&lt;/strong&gt; doesn&amp;rsquo;t work, try just &lt;strong&gt;SDL.h&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SFML</title>
+      <link>https://timur-bahadir.de/tutorial/using_sfml/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://timur-bahadir.de/tutorial/using_sfml/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share some information needed to use the
+SFML library with modern CMake. This guide is very similar to the
+one for SDL.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-sfml&#34;&gt;Installing SFML&lt;/h2&gt;
+
+&lt;p&gt;To make use of SFML in your projects you first need to install it.
+For that i highly recommend compiling it yourself.&lt;/p&gt;
+
+&lt;h3 id=&#34;downloading-the-sfml-source-code&#34;&gt;Downloading the SFML source code&lt;/h3&gt;
+
+&lt;p&gt;To compile it yourself, the source code is required.
+You can either use git like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/SFML/SFML.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or download an archive from &lt;a href=&#34;https://www.sfml-dev.org/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+and then extract it somewhere you like.&lt;/p&gt;
+
+&lt;h3 id=&#34;building-and-installing-sfml&#34;&gt;Building and installing SFML&lt;/h3&gt;
+
+&lt;p&gt;After downloading the source code and entering it&amp;rsquo;s directory,
+build it using CMake. I booth build and install debug and release
+binaries. Also i use the ninja generator, if you don&amp;rsquo;t just omit
+the &lt;strong&gt;-GNinja&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir build
+cd build
+cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug
+cmake --build . --target install -- -j 4
+cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release
+cmake --build . --clean-first --target install -- -j 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;windows-install-errors&#34;&gt;Windows install Errors&lt;/h3&gt;
+
+&lt;p&gt;At this point if you are on windows you might run into errors.
+If the compilation succeeds but the installation fails, it is
+probably a permission problem.&lt;/p&gt;
+
+&lt;p&gt;To fix it, go to the directory CMake tried to install SDL into.
+In my case thats &amp;ldquo;C:\Program Files (x86)\SFML&amp;rdquo;. If the directory
+doesn&amp;rsquo;t exist, create it. Right click on the directory and select
+&lt;strong&gt;Properties&lt;/strong&gt;, then click on the &lt;strong&gt;Security&lt;/strong&gt; tab and then
+click on &lt;strong&gt;Edit&lt;/strong&gt;. Select the user that wants to install SDL,
+probably your current user, and then tick the &lt;strong&gt;Full Control&lt;/strong&gt; box
+followed by &lt;strong&gt;Apply&lt;/strong&gt; and &lt;strong&gt;Ok&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Rerun the installation command. This time it should work.&lt;/p&gt;
+
+&lt;h2 id=&#34;consuming-sfml-in-your-projects&#34;&gt;Consuming SFML in your Projects&lt;/h2&gt;
+
+&lt;p&gt;SFML should now be installed on your system. Now it&amp;rsquo;s time to
+test if it works. For that create a simple CMake project.
+Inside the &lt;strong&gt;CMakeLists.txt&lt;/strong&gt; file add the following lines
+of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cmake&#34;&gt;find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+
+target_link_libraries(cool_project
+                      PUBLIC sfml-graphics sfml-audio)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously change &lt;strong&gt;cool_project&lt;/strong&gt; to the name of your
+executable. And add or remove the components you need/don&amp;rsquo;t need.&lt;/p&gt;
+
+&lt;p&gt;Now inside files which are part of the &lt;strong&gt;cool_project&lt;/strong&gt; executable
+add the following lines of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;SFML/Graphics.hpp&amp;gt;
+
+int main(){
+  sf::RenderWindow window{{100, 100}, &amp;quot;SFML Window&amp;quot;};
+
+  sf::Event event;
+  while(window.isOpen()){
+    while(window.pollEvent(event)){
+      if (window_event.type == sf::Event::Closed)
+        window.close();
+    }
+
+    window.clear();
+    window.display();
+  }
+
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;cool_project&lt;/strong&gt; should now compile.&lt;/p&gt;
+
+&lt;h2 id=&#34;more-windows-problems&#34;&gt;More Windows Problems&lt;/h2&gt;
+
+&lt;h3 id=&#34;don-t-forget-the-binaries&#34;&gt;Don&amp;rsquo;t forget the binaries&lt;/h3&gt;
+
+&lt;p&gt;On Windows your program should compile now but crash when started.
+Theres a high chance that that is because it can&amp;rsquo;t find the SFML runtime binaries.
+You&amp;rsquo;ll have to copy the SFML binaries to one of two spaces.
+Possibility One is next to your executable, possibility two is into your windows
+system32 directory.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TGUI</title>
+      <link>https://timur-bahadir.de/tutorial/using_tgui/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://timur-bahadir.de/tutorial/using_tgui/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share some information needed to use the
+TGUI library with modern CMake. This guide is very similar to the
+one for TGUI.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-tgui&#34;&gt;Installing TGUI&lt;/h2&gt;
+
+&lt;p&gt;To make use of TGUI in your projects you first need to install it.
+For that i highly recommend compiling it yourself.&lt;/p&gt;
+
+&lt;h3 id=&#34;downloading-the-tgui-source-code&#34;&gt;Downloading the TGUI source code&lt;/h3&gt;
+
+&lt;p&gt;To compile it yourself, the source code is required.
+You can either use git like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git clone https://github.com/texus/TGUI.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or download an archive from &lt;a href=&#34;https://tgui.eu/download/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;
+and then extract it somewhere you like.&lt;/p&gt;
+
+&lt;h3 id=&#34;building-and-installing-tgui&#34;&gt;Building and installing TGUI&lt;/h3&gt;
+
+&lt;p&gt;After downloading the source code and entering it&amp;rsquo;s directory,
+build it using CMake. I booth build and install debug and release
+binaries. Also i use the ninja generator, if you don&amp;rsquo;t just omit
+the &lt;strong&gt;-GNinja&lt;/strong&gt;. Note that the &lt;strong&gt;SMFL_DIR&lt;/strong&gt; variable needs to be set
+to the SFML installation directory when configuring. In my case thats
+&amp;ldquo;C:\Program Files (x86)\SFML&amp;rdquo;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir build
+cd build
+cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug -DSFML_DIR=&amp;quot;&amp;lt;/path/to/SMFL&amp;gt;&amp;quot;
+cmake --build . --target install -- -j 4
+cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release -DSFML_DIR=&amp;quot;&amp;lt;/path/to/SMFL&amp;gt;&amp;quot;
+cmake --build . --clean-first --target install -- -j 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;windows-install-errors&#34;&gt;Windows install Errors&lt;/h3&gt;
+
+&lt;p&gt;At this point if you are on windows you might run into errors.
+If the compilation succeeds but the installation fails, it is
+probably a permission problem.&lt;/p&gt;
+
+&lt;p&gt;To fix it, go to the directory CMake tried to install SDL into.
+In my case thats &amp;ldquo;C:\Program Files (x86)\TGUI&amp;rdquo;. If the directory
+doesn&amp;rsquo;t exist, create it. Right click on the directory and select
+&lt;strong&gt;Properties&lt;/strong&gt;, then click on the &lt;strong&gt;Security&lt;/strong&gt; tab and then
+click on &lt;strong&gt;Edit&lt;/strong&gt;. Select the user that wants to install SDL,
+probably your current user, and then tick the &lt;strong&gt;Full Control&lt;/strong&gt; box
+followed by &lt;strong&gt;Apply&lt;/strong&gt; and &lt;strong&gt;Ok&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Rerun the installation command. This time it should work. I had one
+instance where it still couldn&amp;rsquo;t create/find the include directory.
+To fix that issue simply create it by hand inside the TGUI directory.&lt;/p&gt;
+
+&lt;h2 id=&#34;consuming-tgui-in-your-projects&#34;&gt;Consuming TGUI in your Projects&lt;/h2&gt;
+
+&lt;p&gt;TGUI should now be installed on your system. Now it&amp;rsquo;s time to
+test if it works. For that create a simple CMake project.
+Inside the &lt;strong&gt;CMakeLists.txt&lt;/strong&gt; file add the following lines
+of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cmake&#34;&gt;find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+find_package(TGUI 0.8 REQUIRED)
+
+target_link_libraries(cool_project
+                      PUBLIC sfml-graphics sfml-audio tgui)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously change &lt;strong&gt;cool_project&lt;/strong&gt; to the name of your
+executable. And add or remove the components you need/don&amp;rsquo;t need.&lt;/p&gt;
+
+&lt;p&gt;Now inside files which are part of the &lt;strong&gt;cool_project&lt;/strong&gt; executable
+add the following lines of code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c++&#34;&gt;#include &amp;lt;SFML/Graphics.hpp&amp;gt;
+#include &amp;lt;TGUI/TGUI.hpp&amp;gt;
+
+int main(){
+  sf::RenderWindow window{{100, 100}, &amp;quot;SFML Window&amp;quot;};
+  tgui::GUI gui{window};
+
+  sf::Event event;
+  while(window.isOpen()){
+    while(window.pollEvent(event)){
+      if (window_event.type == sf::Event::Closed)
+        window.close();
+
+      gui.handleEvent(event);
+    }
+
+    window.clear();
+    gui.draw();
+    window.display();
+  }
+
+  return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;cool_project&lt;/strong&gt; should now compile.&lt;/p&gt;
+
+&lt;h2 id=&#34;more-windows-problems&#34;&gt;More Windows Problems&lt;/h2&gt;
+
+&lt;h3 id=&#34;don-t-forget-the-binaries&#34;&gt;Don&amp;rsquo;t forget the binaries&lt;/h3&gt;
+
+&lt;p&gt;On Windows your program should compile now but crash when started.
+Theres a high chance that that is because it can&amp;rsquo;t find the TGUI runtime binaries.
+You&amp;rsquo;ll have to copy the TGUI binaries to one of two spaces.
+Possibility One is next to your executable, possibility two is into your windows
+system32 directory.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

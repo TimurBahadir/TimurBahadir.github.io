@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenCV on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/opencv/</link>
+    <description>Recent content in OpenCV on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bachelor Thesis: Person recognition system with OpenHAB integration</title>
+      <link>https://timur-bahadir.de/project/bachelor/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/bachelor/</guid>
+      <description>For my bachelor thesis i wrote a person recognition system with OpenHAB integration. The system consists of a main application, written in python 3.6, called SmurvCamera (Smart surveillance camera).
+First the application learns the names and faces of a group of people, each with its own set of training data (images of their faces). Then it continuously scans a video stream, e.g.: a webcam or a RaspberryPi camera, and analyses each frame.</description>
+    </item>
+    
+  </channel>
+</rss>

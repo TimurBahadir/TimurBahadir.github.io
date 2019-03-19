@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/android/</link>
+    <description>Recent content in android on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Micro-Service based music finder</title>
+      <link>https://timur-bahadir.de/project/music-app/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/music-app/</guid>
+      <description>For university we had to create a music finder application. The application was distributed into multiple containers. A mongoDB-Database, a java Spring Boot business logic layer, a Angular.js web app and a Flutter based Android app. The database, business logic and web app, were each separated into their own Docker container.
+My contribution to the project consisted of the Android app, the definition and composition of the Docker images and containers and parts of the business logic implementation.</description>
+    </item>
+    
+  </channel>
+</rss>

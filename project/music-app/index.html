@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.1.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Timur Bahadir">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="University Project: Micro-Service based music finder.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://timur-bahadir.de/project/music-app/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://timur-bahadir.de/index.xml" type="application/rss+xml" title="Timur Bahadir">
+  <link rel="feed" href="https://timur-bahadir.de/index.xml" type="application/rss+xml" title="Timur Bahadir">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://timur-bahadir.de/project/music-app/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Timur Bahadir">
+  <meta property="og:url" content="https://timur-bahadir.de/project/music-app/">
+  <meta property="og:title" content="Micro-Service based music finder | Timur Bahadir">
+  <meta property="og:description" content="University Project: Micro-Service based music finder."><meta property="og:image" content="https://timur-bahadir.de/project/music-app/featured.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-03-17T20:33:46&#43;01:00">
+  
+  <meta property="article:modified_time" content="2019-03-17T20:33:46&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Micro-Service based music finder | Timur Bahadir</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Timur Bahadir</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+            
+            <span>Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/project/music-app/featured_hu988a484961fc4f33096bff44a949a0e6_1055863_800x0_resize_lanczos_2.png');"></div>
+  <span class="article-header-caption">Screenshot of the Android app.</span>
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Micro-Service based music finder</h1>
+
+        
+
+        
+
+
+
+<meta content="2019-03-17 20:33:46 &#43;0100 CET" itemprop="datePublished">
+<meta content="2019-03-17 20:33:46 &#43;0100 CET" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Mar 17, 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Micro-Service%20based%20music%20finder&amp;url=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f&amp;title=Micro-Service%20based%20music%20finder"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f&amp;title=Micro-Service%20based%20music%20finder"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Micro-Service%20based%20music%20finder&amp;body=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/project/music-app/featured_hu988a484961fc4f33096bff44a949a0e6_1055863_680x500_fill_q90_lanczos_center_2.png" itemprop="image" alt="">
+        <span class="article-header-caption">Screenshot of the Android app.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Micro-Service based music finder</h1>
+
+  
+
+  
+
+
+
+<meta content="2019-03-17 20:33:46 &#43;0100 CET" itemprop="datePublished">
+<meta content="2019-03-17 20:33:46 &#43;0100 CET" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Mar 17, 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Micro-Service%20based%20music%20finder&amp;url=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f&amp;title=Micro-Service%20based%20music%20finder"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f&amp;title=Micro-Service%20based%20music%20finder"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Micro-Service%20based%20music%20finder&amp;body=https%3a%2f%2ftimur-bahadir.de%2fproject%2fmusic-app%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>For university we had to create a music finder application. The application was distributed into
+multiple containers. A mongoDB-Database, a java Spring Boot business logic layer, a Angular.js
+web app and a Flutter based Android app.
+The database, business logic and web app, were each separated into their own Docker container.</p>
+
+<p>My contribution to the project consisted of the Android app, the definition and composition of
+the Docker images and containers and parts of the business logic implementation.</p>
+
+<p>Songs, albums and artists were collected from other services like Spotify and Youtube. Users could create accounts
+and tag songs, albums and artists. For each song an attempt to find it&rsquo;s lyrics was made. If found
+they could be read inside of the app. Users could then search for songs, albums and artists by name or
+user given tags.</p>
+
+
+
+
+
+<div class="gallery">
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_add_tag.png" >
+  <img src="/project/music-app/gallery/app_add_tag_hu44f373b46e261ad60b81f23fe930e369_179793_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_album_info.png" >
+  <img src="/project/music-app/gallery/app_album_info_hu5fe2ee6568218f586ad50595cd49c0b9_411453_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_album_info_li.png" >
+  <img src="/project/music-app/gallery/app_album_info_li_hud5c36b6c3039044679f58cbe3a1af5c4_48428_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_album_songs.png" >
+  <img src="/project/music-app/gallery/app_album_songs_hu4b12166d532cf02d313ebe7f5bfec1ce_35666_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_artist_info.png" >
+  <img src="/project/music-app/gallery/app_artist_info_hu3776c11ddcfe2d8579470b1fd3834dd1_251096_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_artist_info_li.png" >
+  <img src="/project/music-app/gallery/app_artist_info_li_hub430e3a240f775afaec0ba14782b516a_252149_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_home_view.png" >
+  <img src="/project/music-app/gallery/app_home_view_hu7d6db6ab5de546d700b09bda55a605cf_324799_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_login.png" >
+  <img src="/project/music-app/gallery/app_login_huad7c99ea1ab3658bfddf5c326292f788_15647_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_menu_li.png" >
+  <img src="/project/music-app/gallery/app_menu_li_hu9ece163ce32c26ff135419a6838a92a6_96350_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_other_profile.png" >
+  <img src="/project/music-app/gallery/app_other_profile_hu87c0745d3cc2ab883ec9b23643bd6a98_22366_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_other_profile_fab.png" >
+  <img src="/project/music-app/gallery/app_other_profile_fab_hu7a789f8ad32f376323a608b5c685e626_38278_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_profile_fav.png" >
+  <img src="/project/music-app/gallery/app_profile_fav_hu4282c34eea791a1b296f372c97d4fbfa_26298_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_profile_friends.png" >
+  <img src="/project/music-app/gallery/app_profile_friends_hu617e6b01dde22487104641a43d2aa2fa_23055_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_profile_info.png" >
+  <img src="/project/music-app/gallery/app_profile_info_hu9f8994dee10d47299b2b8556dc7677d9_24183_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_register.png" >
+  <img src="/project/music-app/gallery/app_register_hu9930113562e66a9eed52563c60a85629_21674_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_search_none.png" >
+  <img src="/project/music-app/gallery/app_search_none_hue81d2f1958054ff8846cda7fcb06c9b9_38989_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_search_result.png" >
+  <img src="/project/music-app/gallery/app_search_result_hu2bc5e358ef01f58ace2d761b964d7d94_37642_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_song_fab.png" >
+  <img src="/project/music-app/gallery/app_song_fab_hu7779a27957fcf80bd04b594b147a1d18_57442_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_song_info.png" >
+  <img src="/project/music-app/gallery/app_song_info_hu9f2dfff8bc2b60ba0e75c79aef46c91f_36521_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_song_info_li.png" >
+  <img src="/project/music-app/gallery/app_song_info_li_hu1ce82cb95ecf0e2ef1277d8739a595e9_51060_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_song_links.png" >
+  <img src="/project/music-app/gallery/app_song_links_hufd8fa1cedf1b564f5bd3cdd2ac94ad3c_28498_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+    
+    
+    
+    
+    
+  <a data-fancybox="gallery-gallery" href="/project/music-app/gallery/app_song_lyrics.png" >
+  <img src="/project/music-app/gallery/app_song_lyrics_hu129f673d2be7722c13c0830dfc07cfb2_97231_0x190_resize_lanczos_2.png" alt="">
+  </a>
+  
+
+  
+</div>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/university/">university</a>
+  
+  <a class="badge badge-light" href="/tags/android/">android</a>
+  
+  <a class="badge badge-light" href="/tags/app/">app</a>
+  
+  <a class="badge badge-light" href="/tags/flutter/">flutter</a>
+  
+  <a class="badge badge-light" href="/tags/docker/">docker</a>
+  
+  <a class="badge badge-light" href="/tags/micro-service/">micro-service</a>
+  
+  <a class="badge badge-light" href="/tags/http/">http</a>
+  
+  <a class="badge badge-light" href="/tags/restful/">RESTful</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+  </div>
+</article>
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d7381f2d79e6271d4da28f474f49096c.js"></script>
+
+  </body>
+</html>
+

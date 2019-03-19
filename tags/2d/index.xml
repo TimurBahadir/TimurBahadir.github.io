@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2D on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/2d/</link>
+    <description>Recent content in 2D on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/2d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenGL - Tutorial and Examples</title>
+      <link>https://timur-bahadir.de/project/opengl-tutorial/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/opengl-tutorial/</guid>
+      <description>For university i went trough the process of learning OpenGL. I then compiled all the lessons i learned into a ~80 page long tutorial for other to read when they want to learn OpenGL. To improve upon the sources i used, i added multiple examples and many lines of code.
+While reading and following the tutorial and examples a small but reuseable helper library is created, around the OpenGL-C-API, using modern C++.</description>
+    </item>
+    
+    <item>
+      <title>Tiler</title>
+      <link>https://timur-bahadir.de/project/tiler/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/tiler/</guid>
+      <description>A casual clicker game made with Godot 3.1 using C#.
+Intended for mobile devices but delayed since mobile export with C# doesn&amp;rsquo;t work yet. A demo can be downloaded, currently only for Windows.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

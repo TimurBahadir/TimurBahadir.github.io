@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>university on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/university/</link>
+    <description>Recent content in university on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/university/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bachelor Thesis: Person recognition system with OpenHAB integration</title>
+      <link>https://timur-bahadir.de/project/bachelor/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/bachelor/</guid>
+      <description>For my bachelor thesis i wrote a person recognition system with OpenHAB integration. The system consists of a main application, written in python 3.6, called SmurvCamera (Smart surveillance camera).
+First the application learns the names and faces of a group of people, each with its own set of training data (images of their faces). Then it continuously scans a video stream, e.g.: a webcam or a RaspberryPi camera, and analyses each frame.</description>
+    </item>
+    
+    <item>
+      <title>Micro-Service based music finder</title>
+      <link>https://timur-bahadir.de/project/music-app/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/music-app/</guid>
+      <description>For university we had to create a music finder application. The application was distributed into multiple containers. A mongoDB-Database, a java Spring Boot business logic layer, a Angular.js web app and a Flutter based Android app. The database, business logic and web app, were each separated into their own Docker container.
+My contribution to the project consisted of the Android app, the definition and composition of the Docker images and containers and parts of the business logic implementation.</description>
+    </item>
+    
+    <item>
+      <title>OpenGL - Tutorial and Examples</title>
+      <link>https://timur-bahadir.de/project/opengl-tutorial/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/opengl-tutorial/</guid>
+      <description>For university i went trough the process of learning OpenGL. I then compiled all the lessons i learned into a ~80 page long tutorial for other to read when they want to learn OpenGL. To improve upon the sources i used, i added multiple examples and many lines of code.
+While reading and following the tutorial and examples a small but reuseable helper library is created, around the OpenGL-C-API, using modern C++.</description>
+    </item>
+    
+    <item>
+      <title>UniVRsity Nightmare - A VR-Shooter</title>
+      <link>https://timur-bahadir.de/project/vr-shooter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/vr-shooter/</guid>
+      <description>For a game development class in university we had to create a game. In a team of three we decided to make use of the, at the time, new VR technology. In the game, the player is a student stuck inside a nightmare. He needs to defend himself from waves of university related utensils like books, paper airplanes and erasers. For each utensil that reaches the player he looses one life.</description>
+    </item>
+    
+    <item>
+      <title>pl0 Interpreter</title>
+      <link>https://timur-bahadir.de/project/pl0-interpreter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/pl0-interpreter/</guid>
+      <description>A interpreter for the programming language pl0. Created using flex, bison and modern C++. Made for my compiler class in university.</description>
+    </item>
+    
+  </channel>
+</rss>

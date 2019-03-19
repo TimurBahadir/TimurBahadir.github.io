@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sfml on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/sfml/</link>
+    <description>Recent content in sfml on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/sfml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cellular Automaton - Framework | Sandbox</title>
+      <link>https://timur-bahadir.de/project/cellular-automaton/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/cellular-automaton/</guid>
+      <description>To make the development of cellular automatons easier i developed a framework/sandbox application. With it, only the rules for a cellular automaton need to be specified in a simple manner. Creation, interaction, updating and drawing are handled by the application.
+I also recorded the development and combined it with a explanatory voice over into a ~14 minute timelapse which you can watch here.
+  If you want to download pre-built binaries, you can check out the itch.</description>
+    </item>
+    
+  </channel>
+</rss>

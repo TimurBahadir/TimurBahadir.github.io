@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tutorial/</link>
+    <description>Recent content in Overview on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SDL</title>
+      <link>https://timur-bahadir.de/tutorial/using_sdl/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://timur-bahadir.de/tutorial/using_sdl/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share some information needed to use the SDL library with modern CMake. Most guides only use the now deprecated non target_ functions to define include directories.
+Installing SDL To make use of SDL in your projects you first need to install it. For that i highly recommend compiling it yourself.
+Downloading the SDL source code To compile it yourself, the source code is required. You can either use mercurial like this:</description>
+    </item>
+    
+    <item>
+      <title>SFML</title>
+      <link>https://timur-bahadir.de/tutorial/using_sfml/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://timur-bahadir.de/tutorial/using_sfml/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share some information needed to use the SFML library with modern CMake. This guide is very similar to the one for SDL.
+Installing SFML To make use of SFML in your projects you first need to install it. For that i highly recommend compiling it yourself.
+Downloading the SFML source code To compile it yourself, the source code is required. You can either use git like this:</description>
+    </item>
+    
+    <item>
+      <title>TGUI</title>
+      <link>https://timur-bahadir.de/tutorial/using_tgui/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://timur-bahadir.de/tutorial/using_tgui/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share some information needed to use the TGUI library with modern CMake. This guide is very similar to the one for TGUI.
+Installing TGUI To make use of TGUI in your projects you first need to install it. For that i highly recommend compiling it yourself.
+Downloading the TGUI source code To compile it yourself, the source code is required. You can either use git like this:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpp on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/cpp/</link>
+    <description>Recent content in cpp on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cellular Automaton - Framework | Sandbox</title>
+      <link>https://timur-bahadir.de/project/cellular-automaton/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/cellular-automaton/</guid>
+      <description>To make the development of cellular automatons easier i developed a framework/sandbox application. With it, only the rules for a cellular automaton need to be specified in a simple manner. Creation, interaction, updating and drawing are handled by the application.
+I also recorded the development and combined it with a explanatory voice over into a ~14 minute timelapse which you can watch here.
+  If you want to download pre-built binaries, you can check out the itch.</description>
+    </item>
+    
+    <item>
+      <title>CppColors</title>
+      <link>https://timur-bahadir.de/project/cpp-colors/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/cpp-colors/</guid>
+      <description>CppColors is a library to create, handle and convert colors in C++. It started as a experiment with unit testing but actually developed into a useful library.</description>
+    </item>
+    
+    <item>
+      <title>OpenGL - Tutorial and Examples</title>
+      <link>https://timur-bahadir.de/project/opengl-tutorial/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/opengl-tutorial/</guid>
+      <description>For university i went trough the process of learning OpenGL. I then compiled all the lessons i learned into a ~80 page long tutorial for other to read when they want to learn OpenGL. To improve upon the sources i used, i added multiple examples and many lines of code.
+While reading and following the tutorial and examples a small but reuseable helper library is created, around the OpenGL-C-API, using modern C++.</description>
+    </item>
+    
+    <item>
+      <title>pl0 Interpreter</title>
+      <link>https://timur-bahadir.de/project/pl0-interpreter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/pl0-interpreter/</guid>
+      <description>A interpreter for the programming language pl0. Created using flex, bison and modern C++. Made for my compiler class in university.</description>
+    </item>
+    
+  </channel>
+</rss>

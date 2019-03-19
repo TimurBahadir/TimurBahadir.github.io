@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VR on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/vr/</link>
+    <description>Recent content in VR on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/vr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UniVRsity Nightmare - A VR-Shooter</title>
+      <link>https://timur-bahadir.de/project/vr-shooter/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/vr-shooter/</guid>
+      <description>For a game development class in university we had to create a game. In a team of three we decided to make use of the, at the time, new VR technology. In the game, the player is a student stuck inside a nightmare. He needs to defend himself from waves of university related utensils like books, paper airplanes and erasers. For each utensil that reaches the player he looses one life.</description>
+    </item>
+    
+  </channel>
+</rss>

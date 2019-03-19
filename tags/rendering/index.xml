@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rendering on Timur Bahadir</title>
+    <link>https://timur-bahadir.de/tags/rendering/</link>
+    <description>Recent content in Rendering on Timur Bahadir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Mar 2019 20:33:46 +0100</lastBuildDate>
+    
+	<atom:link href="https://timur-bahadir.de/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenGL - Tutorial and Examples</title>
+      <link>https://timur-bahadir.de/project/opengl-tutorial/</link>
+      <pubDate>Sun, 17 Mar 2019 20:33:46 +0100</pubDate>
+      
+      <guid>https://timur-bahadir.de/project/opengl-tutorial/</guid>
+      <description>For university i went trough the process of learning OpenGL. I then compiled all the lessons i learned into a ~80 page long tutorial for other to read when they want to learn OpenGL. To improve upon the sources i used, i added multiple examples and many lines of code.
+While reading and following the tutorial and examples a small but reuseable helper library is created, around the OpenGL-C-API, using modern C++.</description>
+    </item>
+    
+  </channel>
+</rss>
